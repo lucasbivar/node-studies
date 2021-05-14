@@ -6,6 +6,7 @@ const app = express()
 // setup static and middleware
 app.use(express.static('./public'))
 
+//if have a html file in public, by default will returns at '/'
 // app.get('/', (req, res) => {
 //   res.sendFile(path.resolve(__dirname, './navbar-app/index.html'))
 //   adding to static assets
