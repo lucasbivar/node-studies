@@ -1,6 +1,6 @@
 const mongoose = require("../database")
 
-const Profile = new mongoose.Schema({
+const PlayerSchema = new mongoose.Schema({
   //trim:true -> remove white spaces in the end and begin
   firstName: {
     type:String, 
@@ -17,15 +17,15 @@ const Profile = new mongoose.Schema({
     default: 0
   },
   team: {
-    type:String, 
-    trim: true, 
-    default:""
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: "Team"
   },
   position: {
     type:String, 
     trim: true, 
-    default:""
+    default:"",
+    lowercase: true
   }
 })
 
-module.exports = mongoose.model("Profile", Profile)
+module.exports = mongoose.model("Player", PlayerSchema)
