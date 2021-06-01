@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/1-useState/2-useState-basics';
+import Component from './tutorial/2-useEffect/3-useEffect-fetch-data';
 
 function App() {
   return (

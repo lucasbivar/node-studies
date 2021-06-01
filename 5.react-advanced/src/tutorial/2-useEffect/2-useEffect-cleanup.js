@@ -20,10 +20,10 @@ const UseEffectCleanup = () => {
   }, []);
   console.log('render');
   return (
-    <>
+    <React.Fragment>
       <h1>window</h1>
       <h2>{size} PX</h2>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -17,8 +17,14 @@ const UseEffectFetchData = () => {
   useEffect(() => {
     getUsers();
   }, []);
+  // if we dont pass the dependency array in useEffect above, our application
+  // will stay in a infinite loop, because every time that we call the getUsers
+  // the function set the user state, and this reload de component again, calling again
+  // the useEffect, so, with the empty dependency array our useEffect just will be called
+  // one time in the inicial component render
+
   return (
-    <>
+    <React.Fragment>
       <h3>github users</h3>
       <ul className='users'>
         {users.map((user) => {
@@ -34,7 +40,7 @@ const UseEffectFetchData = () => {
           );
         })}
       </ul>
-    </>
+    </React.Fragment>
   );
 };
 
