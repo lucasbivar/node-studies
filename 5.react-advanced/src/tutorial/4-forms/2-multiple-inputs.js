@@ -22,7 +22,7 @@ const ControlledInputs = () => {
     }
   };
   return (
-    <>
+    <React.Fragment>
       <article className='form'>
         <form>
           <div className='form-control'>
@@ -72,7 +72,7 @@ const ControlledInputs = () => {
           );
         })}
       </article>
-    </>
+    </React.Fragment>
   );
 };
 

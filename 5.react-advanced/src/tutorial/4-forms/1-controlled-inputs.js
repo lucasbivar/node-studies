@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 // const inputValue = input.value
 // React
 // value, onChange
-// dynamic object keys
 
 const ControlledInputs = () => {
   const [firstName, setFirstName] = useState('');
@@ -26,7 +25,7 @@ const ControlledInputs = () => {
     }
   };
   return (
-    <>
+    <React.Fragment>
       <article>
         <form className='form' onSubmit={handleSubmit}>
           <div className='form-control'>
@@ -61,7 +60,7 @@ const ControlledInputs = () => {
           );
         })}
       </article>
-    </>
+    </React.Fragment>
   );
 };
 
