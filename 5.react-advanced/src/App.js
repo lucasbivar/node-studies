@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/2-useEffect/3-useEffect-fetch-data';
+import Component from './tutorial/3-conditional-rendering/1-multiple-returns';
 
 function App() {
   return (
