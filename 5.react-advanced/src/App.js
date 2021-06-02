@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/3-conditional-rendering/1-multiple-returns';
+import Component from './tutorial/3-conditional-rendering/3-show-hide';
 
 function App() {
   return (

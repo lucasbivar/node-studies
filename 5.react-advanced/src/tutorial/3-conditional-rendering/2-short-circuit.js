@@ -5,7 +5,9 @@ import React, { useState } from 'react';
 const ShortCircuit = () => {
   const [text, setText] = useState('');
   const [isError, setIsError] = useState(false);
+  //if the fist one is false, will be show 'hello world'
   // const firstValue = text || 'hello world';
+  //if the fist one is true, will be show 'hello world'
   // const secondValue = text && 'hello world';
 
   return (
