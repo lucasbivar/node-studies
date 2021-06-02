@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/4-forms/1-controlled-inputs';
+import Component from './tutorial/5-useRef/1-useRef-basics';
 
 function App() {
   return (

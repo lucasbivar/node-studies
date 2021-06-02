@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-
+// similar to useState
 // preserves value
 // DOES NOT trigger re-render
 // target DOM nodes/elements
@@ -17,14 +17,14 @@ const UseRefBasics = () => {
   });
 
   return (
-    <>
+    <React.Fragment>
       <form className='form' onSubmit={handleSubmit}>
         <div>
           <input type='text' ref={refContainer} />
         </div>
         <button type='submit'>submit</button>
       </form>
-    </>
+    </React.Fragment>
   );
 };
 
