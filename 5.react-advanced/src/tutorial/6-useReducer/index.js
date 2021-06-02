@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from 'react';
 import Modal from './Modal';
-import { data } from '../../../data';
+import { data } from '../../data';
 // reducer function
 import { reducer } from './reducer';
 const defaultState = {
@@ -25,7 +25,7 @@ const Index = () => {
     dispatch({ type: 'CLOSE_MODAL' });
   };
   return (
-    <>
+    <React.Fragment>
       {state.isModalOpen && (
         <Modal closeModal={closeModal} modalContent={state.modalContent} />
       )}
@@ -53,7 +53,7 @@ const Index = () => {
           </div>
         );
       })}
-    </>
+    </React.Fragment>
   );
 };
 
