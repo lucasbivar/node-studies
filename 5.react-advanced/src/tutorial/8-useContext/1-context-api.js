@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { data } from '../../../data';
+import { data } from '../../data';
 // more components
 // fix - context api, redux (for more complex cases)
 
@@ -25,11 +25,11 @@ const List = () => {
   const mainData = useContext(PersonContext);
   console.log(mainData);
   return (
-    <>
+    <React.Fragment>
       {mainData.people.map((person) => {
         return <SinglePerson key={person.id} {...person} />;
       })}
-    </>
+    </React.Fragment>
   );
 };
 

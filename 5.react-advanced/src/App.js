@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/6-useReducer/index';
+import Component from './tutorial/8-useContext/1-context-api';
 
 function App() {
   return (
