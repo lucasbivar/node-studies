@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/5-useRef/1-useRef-basics';
+import Component from './tutorial/6-useReducer/index';
 
 function App() {
   return (

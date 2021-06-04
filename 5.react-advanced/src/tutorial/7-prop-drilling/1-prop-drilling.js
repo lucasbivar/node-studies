@@ -20,7 +20,7 @@ const PropDrilling = () => {
 
 const List = ({ people, removePerson }) => {
   return (
-    <>
+    <React.Fragment>
       {people.map((person) => {
         return (
           <SinglePerson
@@ -30,7 +30,7 @@ const List = ({ people, removePerson }) => {
           />
         );
       })}
-    </>
+    </React.Fragment>
   );
 };
 
