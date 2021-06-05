@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import defaultImage from '../../../assets/default-image.jpeg';
+import defaultImage from '../../assets/default-image.jpeg';
 const Product = ({ image, name, price }) => {
   const url = image && image.url;
   return (
