@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/10-prop-types/index';
+import Component from './tutorial/11-react-router/index';
 
 function App() {
   return (
