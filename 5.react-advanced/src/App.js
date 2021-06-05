@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Component from './tutorial/11-react-router/index';
+import Component from './tutorial/12-memo-useMemo-useCallback/index';
 
 function App() {
   return (

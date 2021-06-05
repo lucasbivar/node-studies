@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useMemo } from 'react'
-import { useFetch } from '../../9-custom-hooks/final/2-useFetch'
+import { useFetch } from '../9-custom-hooks/2-useFetch'
 
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
@@ -30,7 +30,7 @@ const Index = () => {
     products,
   ])
   return (
-    <>
+    <React.Fragment>
       <h1>Count : {count}</h1>
       <button className='btn' onClick={() => setCount(count + 1)}>
         click me
@@ -38,7 +38,7 @@ const Index = () => {
       <h1 style={{ marginTop: '3rem' }}>cart : {cart}</h1>
       <h1>Most Expensive : ${mostExpensive}</h1>
       <BigList products={products} addToCart={addToCart} />
-    </>
+    </React.Fragment>
   )
 }
 
