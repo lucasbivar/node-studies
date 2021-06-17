@@ -58,7 +58,7 @@ class PlayersController{
       if(newData.team != null){
         throw new Error("You don't have permission to change the team.")
       }
-      const player = await Player.findByIdAndUpdate(id, newData, {new: true});
+      const player = await Player.findByIdAndUpdate(id, newData, {new: true}).populate("team");
       return res.status(200).json({
         success: true,
         message: player

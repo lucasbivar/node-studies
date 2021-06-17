@@ -21,7 +21,7 @@ class TeamsController{
   async create(req, res){
     try{
       const team = await Team.create(req.body);
-      return res.status(200).json({
+      return res.status(201).json({
         success: true,
         data: team
       })
