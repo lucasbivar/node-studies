@@ -57,7 +57,7 @@ const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.all('*', (req, res)=>{
-	res.send("<div><h1>Soccer Team API</h1><h2>Error 404</h2></div>");
+	res.status(400).send("<div><h1>Soccer Team API</h1><h2>Error 404</h2>Back to <a href=\"/\">home page</a></div>");
 });
 
 app.listen(PORT, ()=>{
