@@ -5,9 +5,10 @@ const swaggerUi = require("swagger-ui-express");
 const player = require('./routes/PlayerRoutes')
 const team = require('./routes/TeamRoutes')
 
+const { connectToDatabase } = require('./database');
 const PORT = process.env.PORT || 5000;
 
-
+connectToDatabase();
 // initialize app with config options
 const app = express()
 
