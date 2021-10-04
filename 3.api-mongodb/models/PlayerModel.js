@@ -1,4 +1,4 @@
-const mongoose = require("../database")
+const mongoose = require("mongoose")
 
 const PlayerSchema = new mongoose.Schema({
   //trim:true -> remove white spaces in the end and begin
